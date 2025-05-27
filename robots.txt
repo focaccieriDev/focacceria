@@ -1,0 +1,8 @@
+# robots.txt para www.focacceria.es
+
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://www.focacceria.es/sitemap.xml
