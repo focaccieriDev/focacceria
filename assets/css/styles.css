@@ -164,9 +164,11 @@ a:focus {
 }
 
 .pattern-dark-1 {
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAUSURBVBhXYwCCp0BszAgiGBgYGAAPngFNjVzSbwAAAABJRU5ErkJggg==') repeat;
+    /* background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAUSURBVBhXYwCCp0BszAgiGBgYGAAPngFNjVzSbwAAAABJRU5ErkJggg==') repeat; */
     width: 100%;
     position: relative;
+    background-color: #00000085;
+
 }
 
 /** 
