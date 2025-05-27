@@ -1,0 +1,1039 @@
+﻿/** 
+* Table of Contents
+* 
+* 1.0 - Basic Structure
+* 2.0 - Navigation
+* 3.0 - Backgrounds
+* 4.0 - Logo
+* 5.0 - Spacing
+* 6.0 - Headings
+* 7.0 - Countdown Timer
+* 8.0 - Sections
+* 9.0 - Twitter Feed Slider
+* 10.0 - Social Icons
+* 11.0 - Forms
+* 12.0 - Slider Effects
+* 13.0 - Preloader
+* 14.0 - Scroll to Top
+* -----------------------------------------------------------------------------
+*/
+
+/**
+* 1.0 Basic Structure
+*
+* setting up the skin for template style-switcher
+* -----------------------------------------------------------------------------
+*/
+.contact-data {
+    list-style: none;
+    width: 100%;
+    text-align: center
+}
+
+.contact-data li {
+    margin-bottom: 20px;
+}
+
+.contact-data li i,
+.contact-data li a i {
+    margin-right: 20px;
+}
+
+.contact-data li a {
+    color: #f8d277;
+}
+
+body {
+    position: relative;
+    background: #222222;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+a:hover,
+a:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+/** 
+* 2.0 Navigation
+* 
+* responsive navigation styles
+* -----------------------------------------------------------------------------
+*/
+#nav-slide.nav-pills>li+li {
+    margin: 0;
+}
+
+#nav-slide.nav-pills>li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#nav-slide>li.active>a {
+    color: #fff;
+    background: none;
+    border-left: 5px solid #fff;
+}
+
+#nav-slide>li>a {
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    padding: 0px 10px;
+    margin: 15px 0;
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    font-size: 14px;
+}
+
+#nav-slide>li>a:focus {
+    background: none;
+}
+
+#nav-slide>li>a:hover {
+    background: none;
+    border-left: 5px solid #fff;
+}
+
+#nav-slide>li>a>span {
+    font-size: 24px;
+    display: block;
+}
+
+.navbar-toggle {
+    z-index: 9998;
+    position: fixed;
+    right: 0px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+    height: 4px;
+    width: 26px;
+}
+
+.nav-fixed-right {
+    position: fixed;
+    /* right: 0px; */
+    top: 50px;
+    z-index: 9998;
+    float: right;
+    width: 76px;
+    border: 0;
+    box-shadow: none;
+}
+
+#nav-slide.navbar-collapse {
+    padding: 0px;
+    z-index: 9998;
+}
+
+.nav-fixed-right.nav-pills>li {
+    float: none;
+    text-align: center;
+}
+
+.nav-fixed-right.nav-pills {
+    max-height: none;
+    overflow: hidden;
+}
+
+#nav-slider {
+    position: relative;
+    left: 0;
+}
+
+/** 
+* 3.0 Backgrounds
+* 
+* creating background image or patterns
+* -----------------------------------------------------------------------------
+*/
+.pattern-dark {
+    background: rgba(0, 0, 0, 0.40);
+    width: 100%;
+    position: relative;
+}
+
+.pattern-dark-1 {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAUSURBVBhXYwCCp0BszAgiGBgYGAAPngFNjVzSbwAAAABJRU5ErkJggg==') repeat;
+    width: 100%;
+    position: relative;
+}
+
+/** 
+* 4.0 Logo
+* 
+* setting up logo text styling
+* -----------------------------------------------------------------------------
+*/
+.logo {
+    border-top: 5px solid rgba(0, 0, 0, 0.30);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.30);
+    display: inline-block;
+    padding: 5px 0px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.logo-img {
+    width: 250px;
+}
+
+.logo-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 28px;
+    display: inline-block;
+    padding-top: 25px;
+    color: #ffffff;
+}
+
+.logo-text .small-text {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo-text .dot:before {
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 100%;
+    font-family: 'FontAwesome';
+    color: #ffffff;
+    content: "\f006";
+}
+
+/** 
+* 5.0 Spacing
+* 
+* setting the spacing between content and container edges
+* -----------------------------------------------------------------------------
+*/
+.single-space {
+    height: 40px;
+    clear: both;
+}
+
+.double-space {
+    height: 80px;
+    clear: both;
+}
+
+/** 
+* 6.0 Headings
+* 
+* heading styles
+* -----------------------------------------------------------------------------
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    display: inline-block;
+}
+
+h1 .line,
+h2 .line,
+h3 .line,
+h4 .line,
+h5 .line,
+h6 .line {
+    width: 15%;
+    border-bottom: 2px solid #fff;
+    border-top: 0px solid #fff;
+    height: 5px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+#nt-title-container>ul>li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+#nt-title-container>ul {
+    margin: 0;
+    padding: 0;
+}
+
+/** 
+* 7.0 Countdown Timer
+* 
+* setting the styles for countdown timer
+* -----------------------------------------------------------------------------
+*/
+#counter {
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 5px solid rgba(255, 255, 255, 0.20);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.20);
+}
+
+#counter .timer {
+    border-right: 5px solid rgba(255, 255, 255, 0.20);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 104px;
+    background: rgba(0, 0, 0, 0.80);
+}
+
+#counter .timer:last-child {
+    border-right: 0;
+}
+
+#counter span {
+    display: block;
+}
+
+#counter .time {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1;
+}
+
+#counter .text {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    #counter {
+        padding: 0;
+    }
+
+    #counter .timer {
+        border: 5px solid rgba(255, 255, 255, 0.20);
+        border-top: 0;
+    }
+
+    #counter .timer:last-child {
+        border: 5px solid rgba(255, 255, 255, 0.20);
+        border-top: 0;
+        border-bottom: 0;
+    }
+}
+
+/** 
+* 8.0 Sections
+* 
+* styling the sections such as about, features, services, team, progress status, 
+* contact details, footer
+* -----------------------------------------------------------------------------
+*/
+#nt-title-container h1 {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+#header-panel {
+    background-color: #f8d277;
+    background-size: cover !important;
+}
+
+#where-panel {
+    background: url(../img/parallax/focacceria_punto_es_focaccia_italiana_autentica_fermentacion_lenta_vigo.jpg) repeat center center fixed;
+    background-size: cover !important;
+}
+
+#why-us-panel {
+    background: url(../img/parallax/focacceria_punto_es_focaccia_bocaccia_bollo_vigo.jpg) repeat center center fixed;
+    background-size: cover !important;
+}
+
+#expositor-panel {
+    background: url(../img//parallax/focacceria_punto_es_focaccia_bocaccia_bocadillo_caliente_vigo.jpg) repeat center center fixed;
+    background-size: cover !important;
+}
+
+#cta-panel {
+    background: url(../img/parallax/focacceria_es_vigo_focaccia_aireada_rustica.jpg) repeat center center fixed;
+    background-size: cover !important;
+}
+
+#subscribe-panel,
+#services-panel {
+    background: url(../images/2.jpg) repeat center center fixed;
+    background-size: cover !important;
+}
+
+#subscribe .pattern-dark,
+#services .pattern-dark {
+    background: rgba(0, 0, 0, 0.60);
+}
+
+#features-panel,
+#twitter-panel,
+#featured-products-panel {
+    background: #000;
+}
+
+#header-panel {
+    position: relative;
+}
+
+.progress-status {
+    padding: 0;
+    border: 5px solid rgba(255, 255, 255, 0.20);
+    border-bottom: 0;
+}
+
+.progress-status .progress {
+    margin: 0;
+    height: 21px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: none;
+}
+
+.progress-status .progress .progress-bar {
+    height: 21px;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.progress-status .progress-bar>span {
+    font-size: 12px;
+    text-shadow: none;
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+}
+
+.skill {
+    padding: 0 0 10px;
+}
+
+.skill .skill-title {
+    font-size: 14px;
+}
+
+.skill .progress {
+    margin: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: none;
+    height: 20px;
+}
+
+.skill .progress .progress-bar {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 20px;
+    line-height: 18px;
+}
+
+.skill .progress-bar>span {
+    text-shadow: none;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+#why-us-panel .pattern-dark,
+#expositor-panel .pattern-dark,
+#where-panel .pattern-dark,
+#cta-panel .pattern-dark {
+    background: rgba(0, 0, 0, 0.60);
+}
+
+#why-us-panel .why-us-content,
+#expositor-panel .expositor-content,
+#where-panel .where-content,
+#cta-panel .cta-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+}
+
+#why-us-panel .why-us-info,
+#expositor-panel .expositor-info,
+#where-panel .where-info,
+#cta-panel .cta-info {
+    margin: 0px auto 30px;
+}
+
+#contact-panel .pattern-dark {
+    background: rgba(0, 0, 0, 0.60);
+}
+
+#footer-panel .pattern-dark {
+    background: rgba(0, 0, 0, 0.90);
+}
+
+#why-us p,
+#expositor p,
+#cta p,
+#cta p,
+#where p,
+#featured-products p,
+#contact-info,
+.sub-title {
+    font-weight: 300;
+    font-size: 24px;
+    text-align: justify;
+}
+
+#features p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#featured-products .fp-info {
+    text-align: center;
+    margin: 0px auto 30px;
+}
+
+#featured-products .fp-info p {
+    font-size: 20px;
+}
+
+#featured-products .fp-info h3 {
+    display: block;
+    text-transform: uppercase;
+}
+
+#featured-products .fp-info h3 small {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#featured-products .fp-info .social .list-inline>li {
+    padding: 0;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-details p {}
+
+#contact-panel {
+    width: 100%;
+    position: relative;
+}
+
+.map-container .responsive-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.map-container .responsive-wrapper iframe,
+.map-container .responsive-wrapper .map-canvas {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: none;
+    overflow: hidden;
+}
+
+#services .services-info .fa-square {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+#services .services-info .fa-inverse {
+    color: #111111;
+}
+
+#features .features-info .fa-circle {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+#features .features-info .fa-inverse {
+    color: #111111;
+}
+
+#features .features-info {
+    padding: 10px 15px;
+    transition: all ease 0.6s;
+    -moz-transition: all ease 0.6s;
+    -webkit-transition: all ease 0.6s;
+    -o-transition: all ease 0.6s;
+    margin: 10px auto;
+}
+
+#features .features-info h3 {
+    margin-top: 0px;
+}
+
+#features .features-info:hover {
+    background: rgba(255, 255, 255, 0.90);
+    cursor: pointer;
+    color: #000;
+}
+
+#features .features-info:hover .fa-circle {
+    color: rgba(0, 0, 0, 0.80);
+}
+
+#features .features-info:hover .fa-inverse {
+    color: #ffffff;
+}
+
+#footer-panel {
+    position: relative;
+}
+
+#footer-panel #footer .copyright {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+#footer-panel #footer .copyright a {
+    color: #999999;
+    text-decoration: none;
+}
+
+#footer-panel #footer .copyright a:hover {
+    color: #ffffff;
+}
+
+
+/** 
+* 9.0 Twitter Feed Slider
+* 
+* styling the flexslider appearance for twitter feed
+* -----------------------------------------------------------------------------
+*/
+.flexslider {
+    border: none;
+    background: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+}
+
+.twitterfeed {
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.twitterfeed li span {
+    display: block;
+}
+
+.twitterfeed li span.at {
+    display: inline;
+}
+
+.twitterfeed li span a {
+    display: inline-block;
+    color: #fff;
+    padding: 1px;
+    margin: 1px;
+    transition: all 0.6s ease-in;
+    -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    -ms-transition: all 0.6s ease-in;
+}
+
+.twitterfeed li span a:hover {
+    text-decoration: none;
+}
+
+.twitterfeed .flex-control-nav {
+    bottom: -60px;
+}
+
+.twitterfeed .flex-control-nav li a {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-border-radius: 0;
+    width: 20px;
+    height: 2px;
+    overflow: hidden;
+}
+
+.twitterfeed .flex-control-nav li a {
+    background: #666;
+}
+
+.twitterfeed .flex-control-nav li a.flex-active {
+    background: #fff;
+}
+
+.twitterfeed .slides li {
+    height: 120px !important;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .twitterfeed .slides li {
+        font-size: 16px;
+    }
+}
+
+
+/** 
+* 10.0 Social Icons
+* 
+* styling the social icons: facebook, twitter, linked-in, pinterest and tumblr
+* -----------------------------------------------------------------------------
+*/
+.social a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 38px;
+    height: 38px;
+    line-height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: all 0.6s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+}
+
+.social a.fa-facebook {
+    color: #395b9b;
+}
+
+.social a.fa-twitter {
+    color: #20a9ed;
+}
+
+.social a.fa-linkedin {
+    color: #117ba3;
+}
+
+.social a.fa-pinterest {
+    color: #cf1f2a;
+}
+
+.social a.fa-tumblr {
+    color: #325068;
+}
+
+.social a.fa-facebook:hover {
+    border: 1px solid rgba(57, 91, 155, 0.5);
+    background-color: #395b9b;
+    color: #fff;
+}
+
+.social a.fa-twitter:hover {
+    border: 1px solid rgba(32, 169, 237, 0.5);
+    background-color: #20a9ed;
+    color: #fff;
+}
+
+.social a.fa-linkedin:hover {
+    border: 1px solid rgba(17, 123, 163, 0.5);
+    background-color: #117ba3;
+    color: #fff;
+}
+
+.social a.fa-pinterest:hover {
+    border: 1px solid rgba(207, 31, 42, 0.5);
+    background-color: #cf1f2a;
+    color: #fff;
+}
+
+.social a.fa-tumblr:hover {
+    border: 1px solid rgba(50, 80, 104, 0.5);
+    background-color: #325068;
+    color: #fff;
+}
+
+#nav-social li a.fa-facebook,
+#nav-social li a.fa-twitter,
+#nav-social li a.fa-linkedin,
+#nav-social li a.fa-pinterest,
+#nav-social li a.fa-tumblr {
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    color: rgba(0, 0, 0, 0.80);
+    background: rgba(255, 255, 255, 0.40);
+}
+
+#nav-social li a.fa-facebook:hover,
+#nav-social li a.fa-twitter:hover,
+#nav-social li a.fa-linkedin:hover,
+#nav-social li a.fa-pinterest:hover,
+#nav-social li a.fa-tumblr:hover {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.80);
+}
+
+/** 
+* 11.0 Forms
+* 
+* setting up the look and feel of subscribe and contact form
+* -----------------------------------------------------------------------------
+*/
+.btn-default {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background: none;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    background: #ffffff;
+}
+
+#subscribe_form_message,
+#contact_form_message {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}
+
+#contact_form .label-captcha {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#form_contact_us .error,
+#form_subscribe .error {
+    border: 1px solid #cc0000;
+}
+
+#form_contact_us input[type="text"],
+#form_contact_us textarea,
+#form_subscribe input[type="text"] {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+}
+
+#form_contact_us label.error,
+#form_subscribe label.error {
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    padding: 2px 5px;
+    background-color: #cc0000;
+    color: #fff;
+}
+
+#form_contact_us label.error i,
+#form_subscribe label.error i {
+    margin-right: 2px;
+}
+
+#form_contact_us label.input-group-addon {
+    background: none;
+    color: #ffffff;
+    padding-right: 15px;
+}
+
+
+/** 
+* 12.0 Slider Effects
+* 
+* setting up zoom effect for slider images
+* -----------------------------------------------------------------------------
+*/
+#supersized li.activeslide img {
+    animation: zoomeffect 130s ease infinite;
+    -o-animation: zoomeffect 130s ease infinite;
+    -moz-animation: zoomeffect 130s ease infinite;
+    -webkit-animation: zoomeffect 130s ease infinite;
+}
+
+@keyframes zoomeffect {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(10);
+    }
+}
+
+@-o-keyframes zoomeffect {
+    from {
+        -o-transform: scale(1);
+    }
+
+    to {
+        -o-transform: scale(10);
+    }
+}
+
+@-moz-keyframes zoomeffect {
+    from {
+        -moz-transform: scale(1);
+    }
+
+    to {
+        -moz-transform: scale(10);
+    }
+}
+
+@-webkit-keyframes zoomeffect {
+    from {
+        -webkit-transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(10);
+    }
+}
+
+/** 
+* 13.0 Preloader
+* 
+* setting up the page preloader
+* -----------------------------------------------------------------------------
+*/
+#progress-back {
+    top: 0;
+    bottom: auto;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    /* makes sure it stays on top */
+    background-color: #222;
+}
+
+#status {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    margin: -50px 0 0 -50px;
+}
+
+#status .fa-stack-1x {
+    line-height: 1.8em;
+    font-size: 1em;
+}
+
+#status .fa-stack-2x {
+    font-size: 1.8em;
+}
+
+.fa-ispin {
+    -webkit-animation: ispin 2s infinite linear;
+    -moz-animation: ispin 2s infinite linear;
+    -o-animation: ispin 2s infinite linear;
+    animation: ispin 2s infinite linear;
+}
+
+@-moz-keyframes ispin {
+    0% {
+        -moz-transform: rotate(359deg);
+    }
+
+    100% {
+        -moz-transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes ispin {
+    0% {
+        -webkit-transform: rotate(359deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-o-keyframes ispin {
+    0% {
+        -o-transform: rotate(359deg);
+    }
+
+    100% {
+        -o-transform: rotate(0deg);
+    }
+}
+
+@keyframes ispin {
+    0% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+/** 
+* 14.0 Scroll to Top
+* 
+* setting up the page scroll to top auto scroller arrow link
+* -----------------------------------------------------------------------------
+*/
+.scrollup {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 40px;
+    right: 15px;
+    display: none;
+    color: #ffffff;
+    background: #777777;
+    text-align: center;
+    line-height: 47px;
+    font-size: 28px;
+    -moz-opacity: 0.6;
+    -webkit-opacity: 0.6;
+    -o-opacity: 0.6;
+    opacity: 0.6;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -wenkit-border-radius: 100%;
+}
+
+.scrollup:hover,
+.scrollup:focus {
+    color: #777777;
+    text-decoration: none;
+    background: #ffffff;
+    -moz-opacity: 0.9;
+    -webkit-opacity: 0.9;
+    -o-opacity: 0.9;
+    opacity: 0.9;
+}

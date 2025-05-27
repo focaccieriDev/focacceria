@@ -1,0 +1,8 @@
+# Ignorar carpeta docs
+docs/
+
+# Ignorar carpeta htmlFiles
+htmlFiles/
+
+# Ignorar carpeta php
+php/
