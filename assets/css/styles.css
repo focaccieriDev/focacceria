@@ -351,30 +351,30 @@ h6 .line {
 }
 
 #where-panel {
-    background: url(../img/parallax/focaccia-italiana-fermentacion-lenta.jpg) repeat center center fixed;
+    background: url(../img/parallax/focaccia-italiana-fermentacion-lenta.jpg?v=2025-05) repeat center center fixed;
     background-size: cover !important;
 }
 
 #why-us-panel {
-    background: url(../img/parallax/focaccia-bocaccia-bollo.jpg) repeat center center fixed;
+    background: url(../img/parallax/focaccia-bocaccia-bollo.jpg?v=2025-05) repeat center center fixed;
     background-size: cover !important;
 }
 
 #expositor-panel {
-    background: url(../img//parallax/focaccia-bocaccia-bocadillo-caliente.jpg) repeat center center fixed;
+    background: url(../img//parallax/focaccia-bocaccia-bocadillo-caliente.jpg?v=2025-05) repeat center center fixed;
     background-size: cover !important;
 }
 
 #cta-panel {
-    background: url(../img/parallax/focaccia-aireada-rustica.jpg) repeat center center fixed;
+    background: url(../img/parallax/focaccia-aireada-rustica.jpg?v=2025-05) repeat center center fixed;
     background-size: cover !important;
 }
 
-#subscribe-panel,
+/* #subscribe-panel,
 #services-panel {
     background: url(../images/2.jpg) repeat center center fixed;
     background-size: cover !important;
-}
+} */
 
 #subscribe .pattern-dark,
 #services .pattern-dark {
