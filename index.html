@@ -11,7 +11,7 @@
         content="Focaccia artesana, fresca, lista para servir. Ideal para bares, cafeterías y negocios que buscan sabor y calidad sin complicaciones.">
     <meta name="keywords" content="focaccia, pan artesanal, comida italiana, catering, hostelería, La Focacceria">
     <meta name="author" content="La Focacceria">
-<link rel="canonical" href="https://www.focacceria.es/">
+    <link rel="canonical" href="https://www.focacceria.es/">
 
     <meta name="robots" content="index, follow">
 
@@ -35,18 +35,35 @@
     <!-- Manifest (PWA o apps móviles/web) -->
     <link rel="manifest" href="site.webmanifest">
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b03b0434ce.js" crossorigin="anonymous"></script>
+    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="preload" href="assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    </noscript>
+
+    <!-- <script src="https://kit.fontawesome.com/b03b0434ce.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/b03b0434ce.js" crossorigin="anonymous" defer></script>
+
     <link href="assets/flexslider/flexslider.css" rel="stylesheet" />
     <link href="assets/slideshow/css/supersized.css" rel="stylesheet" />
     <link href="assets/slideshow/theme/supersized.shutter.css" rel="stylesheet" />
     <link href="assets/css/animate.css" rel="stylesheet" />
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/css/footer.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
-    <link
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"> -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+    </noscript>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- <link
         href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700|Lato:400,900italic,900,700italic,400italic,300italic,300,100italic,100'
-        rel='stylesheet' type='text/css'>
+        rel='stylesheet' type='text/css'> -->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

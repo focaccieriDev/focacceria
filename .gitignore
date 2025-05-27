@@ -3,6 +3,7 @@ docs/
 
 # Ignorar carpeta htmlFiles
 htmlFiles/
+bck/
 
 # Ignorar carpeta php
 php/
