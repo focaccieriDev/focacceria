@@ -350,22 +350,22 @@ h6 .line {
 }
 
 #where-panel {
-    background: url(../img/parallax/focacceria_punto_es_focaccia_italiana_autentica_fermentacion_lenta_vigo.jpg) repeat center center fixed;
+    background: url(../img/parallax/focaccia-italiana-fermentacion-lenta.jpg) repeat center center fixed;
     background-size: cover !important;
 }
 
 #why-us-panel {
-    background: url(../img/parallax/focacceria_punto_es_focaccia_bocaccia_bollo_vigo.jpg) repeat center center fixed;
+    background: url(../img/parallax/focaccia-bocaccia-bollo.jpg) repeat center center fixed;
     background-size: cover !important;
 }
 
 #expositor-panel {
-    background: url(../img//parallax/focacceria_punto_es_focaccia_bocaccia_bocadillo_caliente_vigo.jpg) repeat center center fixed;
+    background: url(../img//parallax/focaccia-bocaccia-bocadillo-caliente.jpg) repeat center center fixed;
     background-size: cover !important;
 }
 
 #cta-panel {
-    background: url(../img/parallax/focacceria_es_vigo_focaccia_aireada_rustica.jpg) repeat center center fixed;
+    background: url(../img/parallax/focaccia-aireada-rustica.jpg) repeat center center fixed;
     background-size: cover !important;
 }
 
