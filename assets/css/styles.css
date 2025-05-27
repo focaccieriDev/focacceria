@@ -43,6 +43,11 @@
     color: #f8d277;
 }
 
+.img-product {
+    width: 263px;
+    height: 198px;
+}
+
 body {
     position: relative;
     background: #222222;
