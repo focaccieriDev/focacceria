@@ -105,6 +105,7 @@ CookieConsent.run({
         }
     },
     onAccept: (function (cookie) {
+        console.log(23333)
         if (CookieConsent.allowedCategory('analytics')) {
             console.log(2)
 
