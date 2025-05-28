@@ -107,19 +107,19 @@ CookieConsent.run({
     onConsent: ({ acceptedCategories }) => {
         console.log(acceptedCategories)
         console.log(2)
-        if (acceptedCategories.includes('analytics')) {
-            // Cargar Google Analytics solo si se aceptaron las cookies analíticas
-            var gaScript = document.createElement('script');
-            gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-WK26E41579";
-            gaScript.onload = function () {
-                window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-WK26E41579');
-                console.log("✅ Google Analytics cargado");
-            };
-            document.head.appendChild(gaScript);
-        }
+        // if (acceptedCategories.includes('analytics')) {
+        //     // Cargar Google Analytics solo si se aceptaron las cookies analíticas
+        //     var gaScript = document.createElement('script');
+        //     gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-WK26E41579";
+        //     gaScript.onload = function () {
+        //         window.dataLayer = window.dataLayer || [];
+        //         function gtag() { dataLayer.push(arguments); }
+        //         gtag('js', new Date());
+        //         gtag('config', 'G-WK26E41579');
+        //         console.log("✅ Google Analytics cargado");
+        //     };
+        //     document.head.appendChild(gaScript);
+        // }
     }
 
 });
