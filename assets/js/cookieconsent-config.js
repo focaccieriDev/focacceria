@@ -104,10 +104,9 @@ CookieConsent.run({
 
         }
     },
-});
-
-CookieConsent.onAccept(function (cookie) {
-  if (cc.allowedCategory('analytics')) {
-    console.log(2)
-  }
+    onAccept: (function (cookie) {
+        if (cc.allowedCategory('analytics')) {
+            console.log(2)
+        }
+    })
 });
