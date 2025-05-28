@@ -399,7 +399,7 @@ h6 .line {
 #twitter-panel,
 #featured-products-panel {
     background: #000;
-    height: 1515px;
+    /* height: 1515px; */
 }
 
 #header-panel {
