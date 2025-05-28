@@ -104,8 +104,8 @@ CookieConsent.run({
 
         }
     },
-    onConsent: ({ acceptedCategories }) => {
-        console.log(acceptedCategories)
+    onConsent: (cat) => {
+        console.log(cat)
         console.log(2)
         // if (acceptedCategories.includes('analytics')) {
         //     // Cargar Google Analytics solo si se aceptaron las cookies analíticas
