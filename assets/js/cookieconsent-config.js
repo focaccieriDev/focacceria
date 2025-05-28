@@ -105,7 +105,7 @@ CookieConsent.run({
         }
     },
     onConsent: ({ acceptedCategories }) => {
-    if (acceptedCategories.includes('analytics')) {
+    // if (acceptedCategories.includes('analytics')) {
       // Cargar Google Analytics solo si se aceptaron las cookies analíticas
       var gaScript = document.createElement('script');
       gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-WK26E41579";
@@ -117,7 +117,7 @@ CookieConsent.run({
         console.log("✅ Google Analytics cargado");
       };
       document.head.appendChild(gaScript);
-    }
+    // }
   }
 
 });
