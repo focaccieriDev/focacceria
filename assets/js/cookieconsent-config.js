@@ -113,7 +113,6 @@ CookieConsent.run({
                 function gtag() { dataLayer.push(arguments); }
                 gtag('js', new Date());
                 gtag('config', 'G-WK26E41579');
-                console.log("✅ Google Analytics cargado");
             };
             document.head.appendChild(gaScript);
         }
