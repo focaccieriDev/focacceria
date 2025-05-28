@@ -105,8 +105,19 @@ CookieConsent.run({
         }
     },
     onAccept: (function (cookie) {
-        if (cc.allowedCategory('analytics')) {
+        if (CookieConsent.allowedCategory('analytics')) {
             console.log(2)
+
+            var gaScript = document.createElement('script');
+            gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-WK26E41579";
+            gaScript.onload = function () {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-WK26E41579');
+                console.log("✅ Google Analytics cargado");
+            };
+            document.head.appendChild(gaScript);
         }
     })
 });
