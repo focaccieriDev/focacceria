@@ -8,13 +8,15 @@
 
         $('#nav-slide').on('show.bs.collapse', function () {
             $(this).hide(0);
-            $('#nav-slider').animate({ 'left': '-76px' }, 'slow');
+            $('#nav-slider').animate({ 'right': '-76px' }, 'slow');
+            $('#nav-slide').css('background-color', '#776439f5');
             $(this).show('slow');
             $('#navbar-toggle > span').removeClass('fa-bars');
             $('#navbar-toggle > span').addClass('fa-times');
         });
         $('#nav-slide').on('hide.bs.collapse', function () {
             $(this).show(0);
+               $('#nav-slide').css('background-color', 'none');
             $('#nav-slider').animate({ 'left': '0px' }, 'slow');
             $(this).hide('slow');
             $('#navbar-toggle > span').removeClass('fa-times');
@@ -72,9 +74,9 @@
         // });
 
 
-        window.setHeight();
+        // window.setHeight();
 
-        // new WOW().init();
+        new WOW().init();
 
         init_smoothScroll();
 

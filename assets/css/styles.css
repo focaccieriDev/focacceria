@@ -33,6 +33,26 @@
   src: url('/assets/fonts/raleway.woff2') format('woff2');
 }
 
+.fill-screen-header {
+    min-height: 100vh; /* toma al menos el alto de la ventana */
+   display: flex;
+    flex-direction: column; /* para mantener los elementos apilados verticalmente */
+    justify-content: center; /* centra verticalmente */
+    align-items: center;     /* centra horizontalmente */
+    padding: 2rem 1rem;      /* espacio interno */
+    box-sizing: border-box;
+}
+
+.fill-screen {
+    min-height: 100vh; /* toma al menos el alto de la ventana */
+   display: flex;
+    flex-direction: column; /* para mantener los elementos apilados verticalmente */
+    justify-content: center; /* centra verticalmente */
+    align-items: center;     /* centra horizontalmente */
+    padding: 2rem 1rem;      /* espacio interno */
+    box-sizing: border-box;
+}
+
 .contact-data {
     list-style: none;
     width: 100%;
@@ -140,7 +160,7 @@ a:focus {
     top: 50px;
     z-index: 9998;
     float: right;
-    width: 76px;
+    /* width: 76px; */
     border: 0;
     box-shadow: none;
 }
