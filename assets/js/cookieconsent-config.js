@@ -104,11 +104,11 @@ CookieConsent.run({
 
         }
     },
-    onAccept: (function (cookie) {
-        console.log(23333)
-        if (CookieConsent.allowedCategory('analytics')) {
-            console.log(2)
-
+    onConsent: ({ acceptedCategories }) => {
+        console.log(acceptedCategories)
+        console.log(2)
+        if (acceptedCategories.includes('analytics')) {
+            // Cargar Google Analytics solo si se aceptaron las cookies analíticas
             var gaScript = document.createElement('script');
             gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-WK26E41579";
             gaScript.onload = function () {
@@ -120,5 +120,6 @@ CookieConsent.run({
             };
             document.head.appendChild(gaScript);
         }
-    })
+    }
+
 });
