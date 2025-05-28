@@ -74,7 +74,7 @@
 
         window.setHeight();
 
-        new WOW().init();
+        // new WOW().init();
 
         init_smoothScroll();
 
