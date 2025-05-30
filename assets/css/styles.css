@@ -533,6 +533,7 @@ h6 .line {
 #featured-products .fp-info {
     text-align: center;
     margin: 0px auto 30px;
+    cursor: pointer;
 }
 
 #featured-products .fp-info p {

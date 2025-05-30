@@ -15,7 +15,7 @@ $(document).ready(function () {
     // content.html($(this).html());
 
         $('.modal-title').html('<h2>' + title + '</h2><span style="margin-left:10px;font-size:16px">' + subtitle + '</span>');
-        $('.modal-body').html('<img src="' + image + '"/><p style="background-color: #ffffff3b;">' + description + '</p>');
+        $('.modal-body').html('<img src="' + image + '"/><p style="background-color: #ffffff3b;font-size:20px">' + description + '</p>');
     // $('.modal-body p').html(description);
     // console.log(description)  	
 
