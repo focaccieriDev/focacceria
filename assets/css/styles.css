@@ -522,7 +522,7 @@ h6 .line {
 .sub-title {
     font-weight: 300;
     font-size: 24px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 #features p {
